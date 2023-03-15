@@ -1,14 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+    <link rel="stylesheet" href="css/Bootstrap css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+    <!-- Header part start -->
+
+    <header id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <img src="https://amvueinfotech.com/wp-content/uploads/2022/11/logo.svg" alt="Logo"
+                        class="Brand-logo">
+                </div>
+                <div class="col-sm-8 col-md-8 d-flex justify-content-center
+                align-items-center">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="#">Expertise</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <a href="#" class="pill-btn bg-red">Get in touch</a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part End -->
+
+    <!-- hero section start -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="hero-col-left">
+                        <div class="hero-heading">
+                            <h2>Have a dream?</h2>
+                            <h2>Get our theme.</h2>
+                        </div>
+                        <div class="containers">
+                            <h1 class="ah-headline">
+                                <span>Are you looking for</span>
+                                <span class="ah-words-wrapper">
+                                    <b class="is-visible">a creative logo?</b>
+                                    <b>developing you brand system?</b>
+                                    <b>your dream website?</b>
+                                    <b>a strong digital presence?</b>
+                                </span>
+                            </h1>
+                        </div>
+                        <span class="pill-btn bg-red"><a href="#">Let’s talk about</a></span>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="hero-image">
+                        <img src="https://amvueinfotech.com/wp-content/uploads/2022/11/cat.png" alt="Image"
+                            class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section End -->
+
+    <!-- case-study section start -->
+    <section class="case-study">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="study-heading">
+                        <div class="lg-heading">
+                            <h3>WE</h3>
+                        </div>
+                        <div class="md-heading">
+                            <h4>Know this field-</h4>
+                            <h4 style="line-height: 0.7;">Know how to build.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Our team brings out the best concepts for each project. Every project has its own uniqueness.
+                        Please have a look at our recently completed projects</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature">
+                        <a href="#">
+                            <div class="feature-image"></div>
+                            <div class="feature-heading">
+                                <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                <p>Design, Development, Digital Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature">
+                        <a href="#">
+                            <div class="feature-image-2"></div>
+                            <div class="feature-heading">
+                                <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                <p>Design, Development, Digital Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature">
+                        <a href="#">
+                            <div class="feature-image-3"></div>
+                            <div class="feature-heading">
+                                <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                <p>Design, Development, Digital Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature">
+                        <a href="#">
+                            <div class="feature-image-4"></div>
+                            <div class="feature-heading">
+                                <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                <p>Design, Development, Digital Marketing</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <span class="feature-text">
+                        <a href="#">
+                            VIEW ALL WORK
+                            <span class="arrow"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- case-study section end -->
+
+    <!-- capabilities-section start -->
+
+    <section class="capabilities-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="capabilities__list">
+                        <a href="#" class="branding">Branding & Identity
+                            <span class="arrow"></span>
+                        </a>
+                        <a href="#" class="website">Website & Digital Platforms
+                            <span class="arrow"></span>
+                        </a>
+                        <a href="#" class="ecommerce">eCommerce Experience
+                            <span class="arrow"></span>
+                        </a>
+                        <a href="#" class="android">Android Application
+                            <span class="arrow"></span>
+                        </a>
+                        <a href="#" class="print">Print Media Design
+                            <span class="arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- capabilities-section end -->
+
+    <!-- blog-section start -->
+
+    <section class="blog-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/hedonova-partners-with-rno1-as-experience-design-agency/7a0dc933c4-1677437992/news-hedonova-img-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/shift-markets-enters-retrn-to-evolve-their-experience-design-in-web3/2f2a3dbcf4-1677437599/shift-news-img-2-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/rno1-x-ourglass-partner-on-full-rebranding-to-launch-the-super-app/53323665d1-1677437778/news-ourglass-cs-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/happy-holidays-2022-making/87cd456b6e-1671662279/christmasnewsletter-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/prive-x-rno1-partner-on-brand-rollout-and-experience-design-strategy-targeting-ecommerce-brands/8218ecaa4e-1657732571/news-prive-cs-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/w3w-podcast-episode-4-transformation-of-nft-utility-today/201f0f150d-1663283469/w3w-podcast-episode-4-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/home/w3w-podcast-episode-3-how-to-position-in-the-sea-of-sameness/a1b6982fe8-1663283218/w3w-podcast-episode-3-1024x768-crop-1-q100.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/work/bullstrap-leader-in-tech-focused-leather-accessories/8b6e508ff1-1646240653/bullstrap-thumbnail-landscape-r.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slider-box">
+                                    <a href="#">
+                                        <div class="feature-image-5">
+                                            <img src="https://rno1.com/media/pages/work/cloud-apartments/f369959b58-1646240653/ca-thumbnail-landscape.jpg" alt="image">
+                                        </div>
+                                        <div class="feature-heading">
+                                            <h4>Bullstrap — Leader in Tech-Leather Accessories.</h4>
+                                            <p>Design, Development, Digital Marketing</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-swiper-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="feature-text">
+                                <a href="#">
+                                    VIEW ALL WORK
+                                    <span class="arrow"></span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="swiper-selector">
+                                <span class="arrow next"></span>
+                                <span class="arrow prev"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog-section-end -->
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

@@ -7,6 +7,16 @@ $themeBlack:#1e2a2e;
 
 //Fonts
 
-$themeFontFamily:'Poppins' , 'sans-serif';
+$themeFontFamily: 'Poppins', sans-serif;
 $baseFontSize:20px;
 $baseFontWeight:400;
+
+
+//background image
+
+@mixin backgroundImage ($url) {
+    background-image:$url ;
+    background-size: cover;
+    background-position: center;
+}
+

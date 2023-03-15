@@ -1,9 +1,270 @@
 @import '_settings';
 @import '_global-classes';
 
-body{
+* {
     margin: 0;
     padding: 0;
-    background-color: aqua;
 }
 
+body {
+    font-family: $themeFontFamily;
+    font-size: $baseFontSize;
+}
+
+// --------Header-------
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    padding: 9px 0;
+    z-index: 99;
+    transition: all 0.5s;
+
+    .Brand-logo {
+        height: 80px;
+        width: 100%;
+    }
+
+    .nav-menu {
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 15px;
+        }
+
+        a {
+            color: $themeBlack;
+            text-decoration: none;
+            padding: 4px;
+            font-size: $baseFontSize - 2;
+            font-weight: $baseFontWeight;
+            transition: all 0.5s;
+
+
+            &:hover {
+                color: $themeRed;
+            }
+        }
+    }
+}
+
+//hero-section
+
+.hero-section {
+    background-color: #f6f6f6;
+    margin-top: 79px;
+
+    .hero-col-left {
+        width: 560px;
+        padding: 100px 0;
+
+        .hero-heading {
+            h2 {
+                margin: 0;
+                font-size: 65px;
+                font-weight: $baseFontWeight + 400;
+            }
+        }
+
+        .ah-headline{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+       .ah-words-wrapper{
+        font-size: 20px;
+        color: $themeRed;
+       }
+    }
+
+}
+
+//case-study section
+
+.case-study {
+    margin-top: 65px;
+
+    p {
+        font-size: $baseFontSize - 4;
+    }
+
+    .study-heading {
+        display: flex;
+
+        .lg-heading {
+            h3 {
+                font-size: 70px;
+                font-weight: $baseFontWeight + 200;
+            }
+        }
+
+        .md-heading {
+            padding: 5px;
+
+            h4 {
+                margin: 0;
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+.feature {
+    padding: 25px;
+
+    a{
+        text-decoration: none;
+        .feature-image {
+            height: 310px;
+            @include backgroundImage(url(https://rno1.com/media/pages/work/bullstrap-leader-in-tech-focused-leather-accessories/8b6e508ff1-1646240653/bullstrap-thumbnail-landscape-r.jpg));
+            border-radius: 10px;
+        }
+    
+        .feature-image-2 {
+            @include backgroundImage(url(https://rno1.com/media/pages/work/prive/08ef5a49c7-1671639293/prive-thumbnail-landscape.jpg));
+            @extend .feature-image;
+        }
+    
+        .feature-image-3 {
+            @include backgroundImage(url(https://rno1.com/media/pages/work/shift-markets/9a25a8a315-1676283707/shiftmarket-thumbnail-landscape.jpg));
+            @extend .feature-image;
+        }
+    
+        .feature-image-4 {
+            @include backgroundImage( url(https://rno1.com/media/pages/work/cloud-apartments/f369959b58-1646240653/ca-thumbnail-landscape.jpg));
+            @extend .feature-image;
+        }
+    
+        .feature-heading {
+            padding-top: 15px;
+    
+            h4 {
+                color: $themeBlack;
+                font-size: $baseFontSize - 3;
+                font-weight: $baseFontWeight + 200;
+            }
+    
+            p {
+                font-size: $baseFontSize - 4;
+                color: #797979;
+            }
+        }
+    }
+}
+
+.feature-text {
+    padding: 20px;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: #5a6366;
+        font-weight: $baseFontWeight + 200;
+        font-size: $baseFontSize - 2;
+    }
+
+
+    &:hover {
+        .arrow {
+            width: 120px;
+        }
+
+        .arrow::before {
+            width: 70px;
+        }
+    }
+}
+
+.capabilities-section {
+    @include backgroundImage(url(https://rno1.com/media/pages/capabilities/branding-identity/349589516d-1646240653/capabilities-branding-r-1920x994.jpg));
+    margin: 70px 0;
+    transition: all 0.5s ;
+
+    .capabilities__list {
+        padding: 100px;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $themeBlack;
+            font-size: $baseFontSize + 5;
+            font-weight: $baseFontWeight + 200;
+            padding: 19px 0;
+            transition: transform .45s;
+            opacity: 0.6;
+
+            .arrow {
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+
+            &:hover {
+                transform: translate3d(25px, 0, 0);
+                opacity: 1;
+
+                .arrow {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.blog-section{
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      
+
+     .slider-box{
+        margin: 0 20px;
+        a{
+            text-decoration: none;
+        }
+        .feature-image-5{
+            img{
+                height: 250px;
+                object-fit: cover;
+            }
+          }
+     }
+
+     .select-swiper-section{
+        padding: 50px 0;
+
+        .swiper-selector{
+            float: right;
+            
+        }
+     }
+}
+
+  

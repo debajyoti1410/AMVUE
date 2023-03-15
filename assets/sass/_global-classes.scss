@@ -1,1 +1,92 @@
 @import '_settings.scss';
+
+.bg-red {
+    background-color: $themeRed;
+}
+
+.bg-orange {
+    background-color: $themeOrange;
+}
+
+.bg-black {
+    background-color: $themeBlack;
+}
+
+.pill-btn {
+    border-radius: 100px;
+    padding: 7px 15px !important;
+    transition: all 0.5s;
+    color: #ffffff !important;
+
+    a {
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $themeBlack;
+        color: #ffffff;
+    }
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 8px;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+}
+
+.arrow::before {
+    content: '';
+    width: 42px;
+    height: 2px;
+    background-color: #1e2a2e;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    transition: all 0.5s ease;
+}
+
+.arrow::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent $themeBlack;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -5px;
+    transition: all 0.5s ease;
+}
+
+.feature-heading {
+    padding-top: 15px;
+
+    h4 {
+        color: $themeBlack;
+        font-size: $baseFontSize;
+        font-weight: $baseFontWeight + 200;
+        text-align: left;
+    }
+
+    p {
+        font-size: $baseFontSize - 4;
+        color: #797979;
+        text-align: left;
+    }
+}
+
+.next{
+    transform: rotate(180deg);
+    opacity: 0.5;
+
+    &:hover{
+        opacity: 1;
+    }
+  }
