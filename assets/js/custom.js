@@ -43,7 +43,7 @@ textHover('android', 'url("https://rno1.com/media/pages/capabilities/vr-ar-envir
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
-    nextEl: ".prev",
-    prevEl: ".next",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
