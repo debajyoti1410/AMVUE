@@ -4,6 +4,11 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
+    if ($(this).scrollTop() > 50) {
+      document.getElementById("navbar").style.background = "white";
+  } else {
+      document.getElementById("navbar").style.background = "transparent";
+  }
   } else {
     document.getElementById("navbar").style.top = "-100px";
   }
