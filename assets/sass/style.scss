@@ -56,7 +56,7 @@ header {
     }
 }
 
-//hero-section
+// -------hero-section-------
 
 .hero-section {
     @include overflow;
@@ -88,7 +88,7 @@ header {
 
 }
 
-//case-study section
+// -------case-study-------
 
 .case-study {
     @include overflow;
@@ -187,6 +187,8 @@ header {
     }
 }
 
+// -------capabilities-section-------
+
 .capabilities-section {
     @include overflow;
     @include backgroundImage(url(https://rno1.com/media/pages/capabilities/branding-identity/349589516d-1646240653/capabilities-branding-r-1920x994.jpg));
@@ -222,6 +224,8 @@ header {
         }
     }
 }
+
+// -------blog-section-------
 
 .blog-section {
     margin-bottom: 467px;
@@ -274,6 +278,8 @@ header {
         }
     }
 }
+
+// -------Footer-------
 
 footer {
 
