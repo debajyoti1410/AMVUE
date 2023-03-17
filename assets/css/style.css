@@ -15,9 +15,18 @@
   width: 100%;
 }
 
+.p-10 {
+  padding: 50px 25px 20px 25px;
+}
+
+.p-11 {
+  padding: 50px 25px;
+}
+
 .pill-btn {
   border-radius: 100px;
   padding: 7px 15px !important;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #ffffff !important;
 }
@@ -36,6 +45,7 @@
   width: 90px;
   height: 8px;
   padding-left: 25px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -48,6 +58,7 @@
   position: absolute;
   top: 50%;
   margin-top: -1px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -63,6 +74,7 @@
   top: 50%;
   right: 20px;
   margin-top: -5px;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -82,7 +94,8 @@
 }
 
 .swiper-button-prev {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 * {
@@ -101,6 +114,7 @@ header {
   top: 0;
   padding: 9px 0;
   z-index: 99;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 header .Brand-logo {
@@ -108,11 +122,17 @@ header .Brand-logo {
   width: 100%;
 }
 header .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .nav-menu li {
   list-style: none;
@@ -124,6 +144,7 @@ header .nav-menu a {
   padding: 4px;
   font-size: 14px;
   font-weight: 400;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 header .nav-menu a:hover {
@@ -167,6 +188,8 @@ header .nav-menu a:hover {
   font-size: 16px;
 }
 .case-study .study-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .case-study .study-heading .lg-heading h3 {
@@ -251,6 +274,7 @@ header .nav-menu a:hover {
   background-image: url(https://rno1.com/media/pages/capabilities/branding-identity/349589516d-1646240653/capabilities-branding-r-1920x994.jpg);
   background-size: cover;
   background-position: center;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .capabilities-section .capabilities__list {
@@ -263,15 +287,20 @@ header .nav-menu a:hover {
   font-size: 25px;
   font-weight: 600;
   padding: 19px 0;
+  -webkit-transition: -webkit-transform 0.45s;
+  transition: -webkit-transform 0.45s;
   transition: transform 0.45s;
+  transition: transform 0.45s, -webkit-transform 0.45s;
   opacity: 0.6;
 }
 .capabilities-section .capabilities__list a .arrow {
   opacity: 0;
+  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 .capabilities-section .capabilities__list a:hover {
-  transform: translate3d(25px, 0, 0);
+  -webkit-transform: translate3d(25px, 0, 0);
+          transform: translate3d(25px, 0, 0);
   opacity: 1;
 }
 .capabilities-section .capabilities__list a:hover .arrow {
@@ -294,9 +323,15 @@ header .nav-menu a:hover {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .blog-section .swiper-slide img {
   display: block;
@@ -367,6 +402,7 @@ footer .footer-container .footer-menu ul li a {
   color: #5a6366;
   font-size: 15px;
   font-weight: 500;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 footer .footer-container .footer-menu ul li a:hover {
@@ -376,12 +412,15 @@ footer .content {
   padding-left: 20px;
 }
 footer .footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 footer .footer-social ul .footer-social-menu {
   font-size: 20px !important;
   color: #1e2a2e !important;
   margin-right: 15px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 footer .footer-social ul .footer-social-menu:hover {
@@ -393,6 +432,7 @@ footer .copyright-content span {
 }
 footer .copyright-content span a {
   color: #1e2a2e;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 footer .copyright-content span a:hover {
@@ -410,6 +450,7 @@ footer .privacy-content a .privacy {
   margin-right: 20px;
 }
 footer .privacy-content a span {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 footer .privacy-content a span:hover {
@@ -426,7 +467,8 @@ footer .privacy-content a span:hover {
   background: white;
   font-size: 17px;
   line-height: 34px;
-  box-shadow: 0 0 25px rgba(23, 23, 23, 0.25);
+  -webkit-box-shadow: 0 0 25px rgba(23, 23, 23, 0.25);
+          box-shadow: 0 0 25px rgba(23, 23, 23, 0.25);
   height: 40px;
   width: 40px;
   padding: 0;
@@ -434,5 +476,6 @@ footer .privacy-content a span:hover {
   border-radius: 100%;
 }
 #myBtn:hover {
-  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
