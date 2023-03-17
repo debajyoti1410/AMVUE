@@ -17,15 +17,9 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    // background-color: white;
     padding: 9px 0;
     z-index: 99;
     transition: all 0.5s;
-
-    .Brand-logo {
-        height: 60px;
-        width: 100%;
-    }
 
     .nav-menu {
         ul {
@@ -75,15 +69,15 @@ header {
             }
         }
 
-        .ah-headline{
+        .ah-headline {
             font-size: 20px;
             margin-bottom: 15px;
         }
 
-       .ah-words-wrapper{
-        font-size: 20px;
-        color: $themeRed;
-       }
+        .ah-words-wrapper {
+            font-size: 20px;
+            color: $themeRed;
+        }
     }
 
 }
@@ -121,38 +115,39 @@ header {
 .feature {
     padding: 25px;
 
-    a{
+    a {
         text-decoration: none;
+
         .feature-image {
             height: 310px;
             @include backgroundImage(url(https://rno1.com/media/pages/work/bullstrap-leader-in-tech-focused-leather-accessories/8b6e508ff1-1646240653/bullstrap-thumbnail-landscape-r.jpg));
             border-radius: 10px;
         }
-    
+
         .feature-image-2 {
             @include backgroundImage(url(https://rno1.com/media/pages/work/prive/08ef5a49c7-1671639293/prive-thumbnail-landscape.jpg));
             @extend .feature-image;
         }
-    
+
         .feature-image-3 {
             @include backgroundImage(url(https://rno1.com/media/pages/work/shift-markets/9a25a8a315-1676283707/shiftmarket-thumbnail-landscape.jpg));
             @extend .feature-image;
         }
-    
+
         .feature-image-4 {
-            @include backgroundImage( url(https://rno1.com/media/pages/work/cloud-apartments/f369959b58-1646240653/ca-thumbnail-landscape.jpg));
+            @include backgroundImage(url(https://rno1.com/media/pages/work/cloud-apartments/f369959b58-1646240653/ca-thumbnail-landscape.jpg));
             @extend .feature-image;
         }
-    
+
         .feature-heading {
             padding-top: 15px;
-    
+
             h4 {
                 color: $themeBlack;
                 font-size: $baseFontSize - 3;
                 font-weight: $baseFontWeight + 200;
             }
-    
+
             p {
                 font-size: $baseFontSize - 4;
                 color: #797979;
@@ -187,7 +182,7 @@ header {
 .capabilities-section {
     @include backgroundImage(url(https://rno1.com/media/pages/capabilities/branding-identity/349589516d-1646240653/capabilities-branding-r-1920x994.jpg));
     margin: 70px 0;
-    transition: all 0.5s ;
+    transition: all 0.5s;
 
     .capabilities__list {
         padding: 100px;
@@ -220,51 +215,136 @@ header {
     }
 }
 
-.blog-section{
+.blog-section {
     .swiper {
         width: 100%;
         height: 100%;
-      }
-    
-      .swiper-slide {
+    }
+
+    .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-    
-      .swiper-slide img {
+    }
+
+    .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-    
-      
+    }
 
-     .slider-box{
+
+
+    .slider-box {
         margin: 0 20px;
-        a{
+
+        a {
             text-decoration: none;
         }
-        .feature-image-5{
-            img{
+
+        .feature-image-5 {
+            img {
                 height: 250px;
                 object-fit: cover;
             }
-          }
-     }
+        }
+    }
 
-     .select-swiper-section{
+    .select-swiper-section {
         padding: 50px 0;
 
-        .swiper-selector{
+        .swiper-selector {
             float: right;
-            
+
         }
-     }
+    }
 }
 
-  
+footer {
+
+    .footer-contain{
+
+        .footer-text {
+            padding-top: 20px;
+
+            p {
+                font-size: 17px;
+                line-height: 30px;
+                font-weight: $baseFontWeight + 200;
+            }
+        }
+    }
+    .footer-container {
+        margin: 20px 0;
+
+        .footer-title {
+            margin: 0px 0px 25px 0px;
+
+            .title {
+                font-size: $baseFontSize - 6;
+                font-weight: 600;
+                line-height: 20px;
+                letter-spacing: 2px;
+
+                span{
+                    color: $themeRed;
+                    font-size: $baseFontSize - 2;
+                    font-weight: $baseFontWeight + 200;
+                }
+            }
+        }
+
+        .footer-menu{
+
+            ul{
+                list-style: none;
+                padding: 0;
+
+                li{
+                    margin-bottom: 7px;
+
+                    a{
+                        text-decoration: none;
+                        color: #5a6366;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-footer{
+        padding: 50px 0px;
+        .copyright-content{
+
+            span{
+                font-size: $baseFontSize - 5;
+                color: #5a6366;
+    
+                a{
+                    color: $themeBlack;
+                }
+            }
+        }
+    
+        .privacy-content{
+            text-align: end;
+    
+            a{
+                text-decoration: none;
+                color: #5a6366;
+                font-size: 15px;
+    
+                .privacy-policy{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    
+}
