@@ -21,6 +21,11 @@ header {
     z-index: 99;
     transition: all 0.5s;
 
+    .Brand-logo {
+        height: 58px;
+        width: 100%;
+    }
+
     .nav-menu {
         ul {
             display: flex;
@@ -266,85 +271,130 @@ header {
 
 footer {
 
-    .footer-contain{
+    .top-footer {
+        padding: 50px 25px 20px 25px;
 
-        .footer-text {
-            padding-top: 20px;
+        .footer-contain {
 
-            p {
-                font-size: 17px;
-                line-height: 30px;
-                font-weight: $baseFontWeight + 200;
-            }
-        }
-    }
-    .footer-container {
-        margin: 20px 0;
+            .footer-text {
+                padding-top: 20px;
 
-        .footer-title {
-            margin: 0px 0px 25px 0px;
-
-            .title {
-                font-size: $baseFontSize - 6;
-                font-weight: 600;
-                line-height: 20px;
-                letter-spacing: 2px;
-
-                span{
-                    color: $themeRed;
-                    font-size: $baseFontSize - 2;
+                p {
+                    font-size: 17px;
+                    line-height: 30px;
                     font-weight: $baseFontWeight + 200;
                 }
             }
         }
 
-        .footer-menu{
+        .footer-container {
+            margin: 20px 0;
 
-            ul{
-                list-style: none;
-                padding: 0;
+            .footer-title {
+                margin: 0px 0px 25px 0px;
 
-                li{
-                    margin-bottom: 7px;
+                .title {
+                    font-size: $baseFontSize - 6;
+                    font-weight: 600;
+                    line-height: 20px;
+                    letter-spacing: 2px;
 
-                    a{
-                        text-decoration: none;
-                        color: #5a6366;
-                        font-size: 15px;
-                        font-weight: 500;
+                    span {
+                        color: $themeRed;
+                        font-size: $baseFontSize - 2;
+                        font-weight: $baseFontWeight + 200;
+                    }
+                }
+            }
+
+            .footer-menu {
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 7px;
+
+                        a {
+                            text-decoration: none;
+                            color: #5a6366;
+                            font-size: 15px;
+                            font-weight: 500;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: $themeRed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            padding-left: 20px;
+        }
+
+        .footer-social {
+            ul {
+                display: flex;
+
+                .footer-social-menu {
+                    font-size: 20px !important;
+                    color: $themeBlack  !important;
+                    margin-right: 15px;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: $themeRed  !important;
                     }
                 }
             }
         }
     }
 
-    .main-footer{
-        padding: 50px 0px;
-        .copyright-content{
+    .main-footer {
+        padding: 50px 25px;
 
-            span{
+        .copyright-content {
+
+            span {
                 font-size: $baseFontSize - 5;
                 color: #5a6366;
-    
-                a{
+
+                a {
                     color: $themeBlack;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: $themeRed;
+                    }
                 }
             }
         }
-    
-        .privacy-content{
+
+        .privacy-content {
             text-align: end;
-    
-            a{
+
+            a {
                 text-decoration: none;
                 color: #5a6366;
                 font-size: 15px;
-    
-                .privacy-policy{
+
+                .privacy {
                     margin-right: 20px;
+                }
+
+                span {
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: $themeRed;
+                    }
                 }
             }
         }
     }
-    
+
 }
