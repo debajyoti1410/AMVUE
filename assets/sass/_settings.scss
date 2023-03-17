@@ -20,3 +20,9 @@ $baseFontWeight:400;
     background-position: center;
 }
 
+@mixin overflow {
+    z-index: 2;
+    background-color: #ffffff;
+    overflow: visible;
+    position: relative; 
+}
