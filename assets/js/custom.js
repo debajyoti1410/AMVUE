@@ -70,7 +70,7 @@ var swiper = new Swiper(".mySwiper", {
     enabled: true,
   },
   breakpoints: {
-    769: {
+    1023: {
       slidesPerView: 3,
       slidesPerGroup: 3,
     },
