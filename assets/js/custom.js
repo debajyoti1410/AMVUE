@@ -54,20 +54,47 @@ textHover('ecommerce', 'url("https://rno1.com/media/pages/capabilities/web3-expe
 textHover('print', 'url("https://rno1.com/media/pages/capabilities/ecommerce-experiences/7bec86d4d2-1646240653/capabilities-e-comm-r-1920x994.jpg")');
 textHover('android', 'url("https://rno1.com/media/pages/capabilities/vr-ar-environments/8a744b05a5-1646240653/capabilities-vr-r-1920x994.jpg")');
 
+// var swiper = new Swiper(".mySwiper", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
 var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  centeredSlides: false,
+  // slidesPerGroupSkip: 1,
+  // grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  },
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 
-  $('.humberger-menu-icon').click(function () {
+$('.humberger-menu-icon').click(function () {
 
-    /* -------------humberger-menu----------- */
+  /* -------------humberger-menu----------- */
 
-    $('.menu-icon').toggleClass('change');
-    $('.nav-text-close').toggleClass('show');
-    $('.nav-text-menu').toggleClass('hide');
+  $('.menu-icon').toggleClass('change');
+  $('.nav-text-close').toggleClass('show');
+  $('.nav-text-menu').toggleClass('hide');
 
 
-  });
+});

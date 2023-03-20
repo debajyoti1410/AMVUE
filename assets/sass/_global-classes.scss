@@ -23,6 +23,12 @@
 .p-11{
     padding: 50px 25px;
 }
+
+@media (max-width:425px) {
+ .p-10 , .p-11{
+    padding: 0;
+ }   
+}
 .checkbtn{
     float: right;
     cursor: pointer;
@@ -111,7 +117,7 @@
     margin-top: -5px;
     transition: all 0.5s ease;
 }
-@media(max-width:425px){
+@media(max-width:1023px){
     .arrow{
         padding-left: 5px;
     }
